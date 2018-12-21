@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jiesuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0yuan"
+        android:gravity="center"
+        android:background="#eee"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@id/jiesuan">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyLeft"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="#cef"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/shangjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
